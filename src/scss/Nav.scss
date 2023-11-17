@@ -1,0 +1,49 @@
+@import './variaveis';
+
+
+
+nav{
+   display: flex;
+   height: 110px;
+   align-items: center;
+   justify-content: space-around;
+   background-color: $cor-fundo-nav;
+}
+
+
+
+.usuarioNav{
+    color: $cor-escrita;
+    display: flex;
+    flex-direction: column;
+}
+.tudoNav{
+    width: 100%;
+    display: flex;
+
+}
+
+ul {
+    flex-wrap: wrap;
+    display: flex;
+    gap: 15px;
+    margin-left: auto;
+  }
+  
+
+.img-nav{
+    height: 10vh;
+    border-radius: 6px 100px / 120px 100px;
+}
+@media screen and (max-width: 480px){
+    nav{
+        height: 200px;
+    }
+    .ul{
+        margin-top: 1px;
+    }
+    ul{
+        gap: 4px;
+        height: 40px;
+    }
+}
