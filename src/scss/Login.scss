@@ -1,0 +1,63 @@
+@import './variaveis.scss';
+ 
+ 
+.mainLogin{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+  background-color: $cor-fundo;
+  width: 100%;
+  height: 90vh;
+}
+
+h1.titulo-login{
+  color: #865DFF;
+}
+
+form{
+  display: flex;
+  
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  margin: 15px;
+  border-radius: 22px;
+  width: 30%;
+  justify-content: center;
+  text-align: center;
+
+}
+
+input{
+  border-radius: 20px;
+  border: none;
+  font-size: 14px;
+  padding: 6px;
+}
+.usuario{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+.senha{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+ 
+ 
+  
+@media screen and (max-width: 480px) {
+    .containerLogin{
+        flex-direction: column;
+    }
+}

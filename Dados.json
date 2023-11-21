@@ -1,0 +1,10 @@
+{
+  "usuarios": [
+    {
+      "nome": "digo",
+      "email": "otnchallengefiap@gmail.com",
+      "senha": "12",
+      "id": 1
+    }
+  ]
+}
