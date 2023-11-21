@@ -95,6 +95,9 @@ article {
     border: 1px solid #bebebe;
     padding: 10px;
     margin: 10px;
+    font-size: 50px;
+    height: 30px;
+    width: 100px;
   }
 
 
@@ -164,5 +167,72 @@ section {
     border: 1px solid #bebebe;
     padding: 10px;
     margin: 10px;
+    height: 20px;
+    width: 60px;
+    font-size: 5px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .mainHome {
+    flex-direction: column;
+    align-items: center;
+    padding: 5vh; // Ajuste o espaçamento interno para telas menores
+    height: 1000px;
+  }
+
+  .img-home {
+    width: 100%; // Faz com que a imagem ocupe toda a largura disponível
+    height: auto; // Mantém a proporção da imagem
+    margin: 10px 0; // Ajusta a margem superior e inferior da imagem
+  }
+
+  section {
+    margin-top: 10px; // Reduz a margem superior da seção
+  }
+
+  .cards-section {
+    justify-content: center; // Centraliza os cards
+  }
+
+  .tituloSolucao {
+    width: auto; // Permite que o título se ajuste à largura do conteúdo
+    margin-bottom: 15px; // Reduz a margem inferior do título
+  }
+
+  .titulo-sol {
+    margin-top: 10px; // Ajusta a margem superior do título
+  }
+
+  .escrita-sol {
+    width: auto; // Permite que o texto se ajuste à largura do conteúdo
+    font-size: 10px; // Reduz o tamanho da fonte
+    margin: 10px 0; // Ajusta a margem superior e inferior
+  }
+
+  .escrita-aside {
+    font-size: 9px; // Reduz o tamanho da fonte
+    margin: 10px 0; // Ajusta a margem superior e inferior
+  }
+
+  .banner {
+    height: 150px; // Reduz a altura do banner
+    margin-top: 15px; // Ajusta a margem superior do banner
+  }
+
+  .banner .mais-informacao,
+  .banner a {
+    position: static; // Remove a posição absoluta
+    margin: 10px 0; // Ajusta a margem superior e inferior
+  }
+
+  aside {
+    width: 100%; // Ocupa toda a largura disponível
+    height: 100000px;
+  }
+
+  .cards-container {
+    gap: 20px; // Ajusta o espaçamento entre os cards
   }
 }

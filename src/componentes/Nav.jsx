@@ -6,6 +6,10 @@ import '../scss/Nav.scss'
 function Nav() {
 
     const [userLogado] = useState(JSON.parse(sessionStorage.getItem("usuarioLogado")))
+    const handleLogout = () => {
+        sessionStorage.removeItem("usuarioLogado");
+        window.location.reload();
+    }
 
     return (
         <>
@@ -17,7 +21,7 @@ function Nav() {
                 <Link to="/" className='text-decoration-none text-dark'><img className="img-nav" src="./src/images/LOGO_RC.jpg" alt="Logo" /></Link>
 
                 <div className='usuarioNav' style={userLogado == null ? { display: "none" } : { display: "block" }}>
-                    <p className='usuario'>{userLogado != null ? `Usuario Logado: ${userLogado.usuario}` : ""}</p>
+                    <p className='usuario'>{userLogado != null ? `Usuario Logado: ${userLogado.nome}` : ""}</p>
                 </div>
 
 
@@ -26,7 +30,7 @@ function Nav() {
                         <li className='btn btn-secondary'><Link to="/" className='text-decoration-none text-light'>Home</Link></li>
                         <li className='btn btn-secondary'><Link to="/Login" className='text-decoration-none text-light'>Login</Link></li>
                         <li className='btn btn-secondary'><Link to="/cadastro" className='text-decoration-none text-light'>Cadastro</Link></li>
-                        <li className='btn btn-secondary'><Link to="/listarCadastro" className='text-decoration-none text-light'>Listar Cadastros</Link></li>
+                        <li className='btn btn-secondary'><btn onClick={handleLogout}>Deslogar</btn></li>
                     </ul>
                 </div>
 

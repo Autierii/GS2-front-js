@@ -1,6 +1,5 @@
 import {useState, useEffect} from 'react';
 import { useParams, Link } from 'react-router-dom';
-import {FaRegTimesCircle} from 'react-icons/fa'
 import '../scss/Cadastro.scss'
 
 function Cadastro() {
@@ -16,7 +15,7 @@ function Cadastro() {
     email:'',
     senha:''
   })
-  //criando a variavel metodo post
+ 
 
   let metodo ='post'
   if(id){
@@ -56,8 +55,8 @@ function Cadastro() {
   return(
   <>
     <div className='pedido'>
-        <h1 className='titulocadastroPed'>Cadastro</h1>
-        <form className='dados' onSubmit={handleSubmit}>
+        <h1 className='titulocadastroPed titulo-login'>Cadastro</h1>
+        <form className='dados bg-secondary' onSubmit={handleSubmit}>
             <input
             className='inputPed'
             type="text"
@@ -82,10 +81,7 @@ function Cadastro() {
             placeholder="Digite uma senha"
             onChange={handleChange}
             />
-            <button className='botao'type="submit">Cadastrar</button>
-            <Link to="/listaralunos">
-            <FaRegTimesCircle/>
-            </Link>
+            <button className='botao' type="submit" onClick={handleSubmit}>Cadastrar</button>
         </form>
     </div>
     

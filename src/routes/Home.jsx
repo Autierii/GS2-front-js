@@ -15,7 +15,7 @@ function Home() {
                     </header>
                     <article>
                         <div className='tituloSolucao'>
-                            <h1>TITULO DA SOLUÇÃO</h1>
+                            <h1>Recovery Bridge</h1>
                         </div>
 
                         <div className="banner-container">
@@ -25,7 +25,7 @@ function Home() {
                                 </p>
                                 
                             </div>
-                            <a href="#" className="mais-informacao">Mais informação</a>
+                            <a href="#" className="mais-informacao" style={{width: '110px', height: '30px', fontSize: '10px', textAlign: 'center'}}>Mais informação</a>
                         </div>
 
                     </article>

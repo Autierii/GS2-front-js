@@ -1,10 +1,22 @@
 {
   "usuarios": [
     {
-      "nome": "digo",
-      "email": "otnchallengefiap@gmail.com",
-      "senha": "12",
+      "nome": "Rafael",
+      "email": "rafael_autieri@hotmail.com",
+      "senha": "123456",
       "id": 1
+    },
+    {
+      "nome": "Rafael",
+      "email": "rafael_autieri@hotmail.com",
+      "senha": "123456",
+      "id": 2
+    },
+    {
+      "nome": "joao",
+      "email": "rafael_autieri@icloud.com",
+      "senha": "123456",
+      "id": 3
     }
   ]
 }
