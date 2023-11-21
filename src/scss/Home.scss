@@ -6,7 +6,8 @@
   gap: 6vh;
   background-color: $cor-fundo;
   height: 100vh;
-  padding: 10vh; /* Adicione o espaçamento desejado para a margem interna */
+  padding: 10vh;
+  /* Adicione o espaçamento desejado para a margem interna */
 
 }
 
@@ -27,8 +28,9 @@ section {
 article {
   display: flex;
   gap: 6vh;
-
 }
+
+
 
 .cards-section {
   display: flex;
@@ -45,20 +47,30 @@ article {
   margin-bottom: 30px;
 }
 
-.titulo-sol{
+.titulo-sol {
   color: $cor-titulo;
+  margin-top: 15px;
 }
 
-.escrita-sol{
-  color: $cor-escrita
+.escrita-sol {
+  color: $cor-escrita;
+  width: 60vh;
+  font-size: 30px;
+  margin: 20px;
 }
 
+.escrita-aside {
+  color: $cor-escrita;
+  font-size: 23px;
+  margin: 10px;
+  justify-content: space-between;
+}
 
-.fundopreto{
+.fundopreto {
   background-color: $cor-fundo;
 }
 
-.card-custom{
+.card-custom {
   background-color: $cor-fundo;
   color: $cor-escrita;
 }
@@ -72,6 +84,19 @@ article {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  .mais-informacao {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-decoration: none;
+    border-radius: 3px;
+    border: 1px solid #bebebe;
+    padding: 10px;
+    margin: 10px;
+  }
+
 
   p {
     text-align: center;
@@ -98,6 +123,7 @@ aside {
   margin-top: 15px;
 }
 
+
 .vantagens {
   background-color: $cor-fundo;
 }
@@ -121,6 +147,22 @@ section {
 
 .cards-container {
   display: flex;
-  gap: 100px; /* Adicione o espaçamento desejado entre os cards */
+  gap: 100px;
+  /* Adicione o espaçamento desejado entre os cards */
   flex-wrap: wrap;
+}
+
+.banner-container {
+  position: relative;
+
+  .mais-informacao {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-decoration: none;
+    border-radius: 3px;
+    border: 1px solid #bebebe;
+    padding: 10px;
+    margin: 10px;
+  }
 }
