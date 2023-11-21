@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import '../scss/Nav.scss'
 
+
 function Nav() {
 
     const [userLogado] = useState(JSON.parse(sessionStorage.getItem("usuarioLogado")))
@@ -13,7 +14,7 @@ function Nav() {
 
 
 
-                <Link to="/" className='text-decoration-none text-dark'><img className="img-nav" src="./src/imagens/OSV_logo1.png" alt="" /></Link>
+                <Link to="/" className='text-decoration-none text-dark'><img className="img-nav" src="./src/images/LOGO_RC.jpg" alt="Logo" /></Link>
 
                 <div className='usuarioNav' style={userLogado == null ? { display: "none" } : { display: "block" }}>
                     <p className='usuario'>{userLogado != null ? `Usuario Logado: ${userLogado.usuario}` : ""}</p>
